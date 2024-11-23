@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oh Taco Mexican Taqueria</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <img src="images/ohtacologo.png" alt="Oh Taco Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us <span class="heading-icon taco"></span></h2>
+    <p>Welcome to Oh Taco Mexican Taqueria, where our journey started with humble beginnings. Initially, we began trading at local markets, offering authentic and delicious Mexican cuisine to the Durban community. Thanks to the incredible support from our customers, our small market stall quickly grew in popularity, and we were able to take the next step in our journey — opening our very own store.</p>
+    <p>Today, Oh Taco is a family-run business that proudly serves a wide variety of Mexican dishes, from sizzling tacos to flavorful burritos, quesadillas, and more. Our passion for great food, fresh ingredients, and bold flavors is at the heart of everything we do. We believe in the importance of quality, authenticity, and hospitality — bringing you a genuine taste of Mexico right here in Durban.</p>
+    <p>We’re committed to making every visit to Oh Taco a memorable one, whether you’re enjoying a quick lunch, gathering with friends, or celebrating special occasions. Our team is dedicated to providing friendly service in a welcoming atmosphere. We invite you to experience the delicious flavors of Mexico and enjoy the love and care we put into each dish.</p>
+    <p>Thank you for supporting our family business. We hope to continue serving you for years to come!</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu <span class="heading-icon sombrero"></span></h2>
+    <div class="menu-images">
+      <img src="images/menu1.jpg" alt="Menu Item 1" data-src="images/menu1.jpg">
+      <img src="images/menu2.jpg" alt="Menu Item 2" data-src="images/menu2.jpg">
+      <img src="images/menu3.jpg" alt="Menu Item 3" data-src="images/menu3.jpg">
+      <img src="images/menu4.jpg" alt="Menu Item 4" data-src="images/menu4.jpg">
+    </div>
+  </section>
+
+  <!-- Modal Structure -->
+  <div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Full Image">
+  </div>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery <span class="heading-icon cactus"></span></h2>
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpg" alt="Gallery Image 1">
+      <img src="images/gallery2.jpg" alt="Gallery Image 2">
+      <img src="images/gallery3.jpg" alt="Gallery Image 3">
+      <img src="images/gallery4.jpg" alt="Gallery Image 4">
+      <img src="images/gallery5.jpg" alt="Gallery Image 5">
+      <img src="images/gallery6.jpg" alt="Gallery Image 6">
+      <img src="images/gallery7.jpg" alt="Gallery Image 7">
+      <img src="images/gallery8.jpg" alt="Gallery Image 8">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us <span class="heading-icon taco"></span></h2>
+    <p>📍 Cowey Park Centre, 91 Problem Mkhize Rd, Essenwood, Durban</p>
+    <p>Email: <a href="mailto:nasreenpatel77@gmail.com">nasreenpatel77@gmail.com</a></p>
+    <p>Phone: <a href="tel:0826105786">082 610 5786</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">
+      <img src="images/ohtacologo.png" alt="Oh Taco Logo">
+    </div>
+    <p>&copy; 2024 Oh Taco. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

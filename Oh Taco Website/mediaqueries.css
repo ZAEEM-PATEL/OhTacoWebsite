@@ -1,0 +1,39 @@
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  .menu-open .nav-links {
+      display: flex;
+      flex-direction: column;
+      background: var(--orange);
+      position: absolute;
+      top: 70px;
+      right: 0;
+      left: 0;
+      z-index: 1;
+  }
+
+  .menu-images {
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+  }
+
+  .menu-images img {
+      max-width: 150px; /* Smaller image size */
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-images {
+      grid-template-columns: 1fr; /* 1 image per row */
+  }
+
+  .menu-images img {
+      max-width: 120px; /* Further reduce image size */
+  }
+}
